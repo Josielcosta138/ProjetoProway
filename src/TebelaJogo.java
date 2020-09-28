@@ -7,6 +7,7 @@ import java.util.Scanner;
  */
 public class TebelaJogo {
 
+
     /**
      * Parametros que define a classe onde irá Executar o Programa.
      * @param args
@@ -16,10 +17,10 @@ public class TebelaJogo {
         Scanner leia = new Scanner(System.in);
         Scanner leiaOpcao = new Scanner(System.in);
 
+
         /**
          * Criando ArrayList Classe Jogos de nome (ListaJogos)
          */
-        //criando ArrayList Classe Jogos Nome ListaJogos.
         ArrayList<Jogos> ListaJogo = new ArrayList<>();
 
         //Método Construtor
@@ -61,6 +62,7 @@ public class TebelaJogo {
                  * Opção Interface de Inserção de Jogos
                  */
                 //Inserir dados no Jogo
+
                 case 1: {
 
                     //Informando quantos jogos ira adicionar na tabela
@@ -86,9 +88,10 @@ public class TebelaJogo {
 
                         /**
                          * @while
-                         *  Verificações de placare recordes.
+                         *  Verificações de placar e recordes.
+                         *  Verificação de numeros positivos e menores que 1000.
                          */
-                             //Verificação de numeros positivos e menores que 1000.
+                            
                              while (placar <= 0 == placar <1000) {
                                     System.out.println("| Seu placar não  'Positvo' !|");
                                     System.out.println("| Informe Placar >Novamente< |");
@@ -101,15 +104,26 @@ public class TebelaJogo {
                         /**
                          * @if
                          *  Verificações de placare recordes.
+                         *  Verificação para anotar o recorde.
                          */
-                        // Verificação para anotar o recorde.
-                        if ( placar < 5) {
+
+                        if ((ListaJogo.contains(1)||placar < 5)) {
                             recordmin = 1;
+                            recordmax = 0;
 
                         }else{
-
                             recordmax = 1;
+                            recordmin = 0;
                         }
+                        /*
+                        if ((ListaJogo.contains(2)||placar < recordmax)) {
+                            recordmin = 1;
+                            recordmax = 0;
+                        }else{
+
+                           // recordmax = 1;
+                           recordmin = 0;
+                        }*/
 
                         System.out.println("| Placar salvo com sucesso!  |");
                         System.out.println();
