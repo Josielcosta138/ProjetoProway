@@ -6,12 +6,9 @@
 - [Sobre](#-sobre)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Como Baixar o projeto](#-como-baixar-o-projeto)
+- [Desenvolvido por . . .](#-desenvolvido-por-josiel-costa-martins.)
 
-
-#
-
-
-
+ #
 
 <h1 align="center">
 <img src="https://ik.imagekit.io/jcmjjj/TI_Od4Zunwgz.jpg"> </h1>
@@ -54,11 +51,13 @@ $ yarn install
 $ yarn start
 ```
 ---
+
 <!--Se tiver aplicação em algum local (remoto) -->
 <h3 align="center">
     <a hreF="https://httpppss.com/">Acessar a demonstração</a>
 <h3 >
 
 ---
-
-🚀 Desenvolvido por  Josiel Costa Martins.
+#
+#
+### 🚀 Desenvolvido por Josiel Costa Martins.
