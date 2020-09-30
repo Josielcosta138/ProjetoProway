@@ -1,6 +1,9 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Iterator;
 import java.util.Scanner;
+
+import javax.xml.transform.ErrorListener;
 
 /**
  * Classe Onde sera inserido Todos dados do Jogo
@@ -16,7 +19,8 @@ public class TebelaJogo {
 
         Scanner leia = new Scanner(System.in);
         Scanner leiaOpcao = new Scanner(System.in);
-
+        
+        
 
         /**
          * Criando ArrayList Classe Jogos de nome (ListaJogos)
@@ -26,57 +30,94 @@ public class TebelaJogo {
         //Método Construtor
         Jogos jogo = new Jogos();
 
+        System.out.println(); 
+        System.out.println();
+        System.out.println("|_______________________|");
         System.out.println("|     INICIO TABELA     |");
         System.out.println("|     INSERIR DADOS     |");
-        System.out.println();
+        System.out.println("|                       |");
         System.out.println("| OBS:Placar numeros    |");
         System.out.println("| Inteiros,Positivos e  |");
         System.out.println("| Menores que 1000.     |");
-
-        System.out.println("________________________");
+        System.out.println("|                       |");
+        System.out.println("|_______________________|");
+        System.out.println();
 
 
         /**
          * @while
          * While Menu onde podera escolher quais opções irá ser feita
          */
-        int opcao = 99;
-        while (opcao != 0) {
-
+        
+        int opcao = 9;
+        
+        while (opcao != 0) { 
+            try{
+            
+            System.out.println("|________________________|");
+            System.out.println("|                        |");
             System.out.println("|        MENU JOGO       |");
             System.out.println("|     1 INSERIR JOGO     |");
             System.out.println("|     2 CONSULTAR TABELA |");
-            System.out.println("|     3 NOVO JOGO        |");
             System.out.println("|     0 SAIR             |");
+            System.out.println("|________________________|");
             System.out.println();
+
+
 
             opcao = (leiaOpcao.nextInt());
 
-
+        }catch(Exception erro){
+            System.out.println("|___________________________________________|");
+            System.out.println("|                                           |");
+            System.out.println("| Atenção! Insira somente valor *Numérico* >|"+erro) ;
+            System.out.println("|      Execute o código Novamente          >|"+erro) ;
+            System.out.println("|___________________________________________|");
+            
+            opcao = (leiaOpcao.nextInt());
+         }  finally{
+             System.out.println("ok");
+         }
+         
+         
             //Comando Escolha
             switch (opcao) {
-
 
                 /**
                  * @switch
                  * Opção Interface de Inserção de Jogos
                  */
-                //Inserir dados no Jogo
-
+                
                 case 1: {
+                    
+                     /**
+                     * Informando quantos jogos ira adicionar na tabela
+                     */
 
-                    //Informando quantos jogos ira adicionar na tabela
                     int n;
+
+                    try {
                     System.out.println("| QUANTOS JOGOS? |");
                     n=(leia.nextInt());
+                   
+
+                    }catch(Exception erro){
+                        System.out.println("|___________________________________________|");
+                        System.out.println("|                                           |");
+                        System.out.println("| Atenção! Insira somente valor *Numérico* >|"+erro) ;
+                        System.out.println("|      Execute o código Novamente          >|"+erro) ;
+                        System.out.println("|___________________________________________|");
+                        break;
+                     } 
+
 
                     for (int i = 0; i < n; i++) {
-
+                    
                         //armazena Jogo
                         System.out.println("|  Jogo :|" + (i + 1));
                         System.out.println("| Informe o Placar:|");
                         int placar = (leia.nextInt());
-
+                    
 
                         //Recebendo = Placar Mínimo e Máximo da temporada
 
@@ -84,8 +125,8 @@ public class TebelaJogo {
                         int maxTemporada = placar;
                         int recordmin = 0;
                         int recordmax = 0;
-
-
+                    
+                    
                         /**
                          * @while
                          *  Verificações de placar e recordes.
@@ -148,29 +189,34 @@ public class TebelaJogo {
 
                         //TABELA DO JOGO
                         System.out.println();
-                        System.out.println("___________________-");
+                        System.out.println("|__________________|");
+
                         System.out.println("| Tabela Proway!   |");
                         System.out.println("| Jogo         : "+( i+ 1 ) +" |");
-                        System.out.println("|                              |");
+                        System.out.println("|                  |");
                         System.out.println("| Placar       : "+ListaJogo.get(i).getPlacar()+" |");
                         System.out.println("| Min-Temporada: "+ ListaJogo.get(i).getMinTemporada()+" |");
                         System.out.println("| Máx-Temporada: "+ ListaJogo.get(i).getMaxTemporada()+" |");
-                        System.out.println("| Record-Min   : "+ ListaJogo.get(i).getRecordemin()+"   |");
-                        System.out.println("| Record-Max   : "+ ListaJogo.get(i).getRecordemax()+"   |");
-                        System.out.println("___________________-");
+                        System.out.println("| Record-Min   : "+ ListaJogo.get(i).getRecordemin()+" |");
+                        System.out.println("| Record-Max   : "+ ListaJogo.get(i).getRecordemax()+" |");
+                        System.out.println("|__________________|");
                         System.out.println();
 
                     }
                     break;
                 }
-                case 3: {
-
+                case 0: {
+                        System.out.println();
+                        System.out.println("|____________________|");
+                        System.out.println("|                    |");
+                        System.out.println("|       End...       |");
+                        System.out.println("|____________________|");
                 }
             }
         }
     }
-}
 
+}
 
 /*
     Iterator itr = ListaJogo.iterator();
