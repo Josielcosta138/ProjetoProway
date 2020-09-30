@@ -52,6 +52,10 @@ public class TebelaJogo {
         int opcao = 9;
         
         while (opcao != 0) { 
+
+            /**
+             * Inicio de tratamento de erro.
+             */
             try{
             
             System.out.println("|________________________|");
@@ -75,11 +79,11 @@ public class TebelaJogo {
             System.out.println("|___________________________________________|");
             
             opcao = (leiaOpcao.nextInt());
-         }  finally{
-             System.out.println("ok");
-         }
+            break;
+            
+         }   
          
-         
+        
             //Comando Escolha
             switch (opcao) {
 
@@ -89,30 +93,34 @@ public class TebelaJogo {
                  */
                 
                 case 1: {
-                    
-                     /**
+                    /**
                      * Informando quantos jogos ira adicionar na tabela
                      */
 
+                    
                     int n;
 
+                    /**
+                     * Inicio de tratamento de erro.
+                     */
                     try {
                     System.out.println("| QUANTOS JOGOS? |");
                     n=(leia.nextInt());
                    
-
                     }catch(Exception erro){
                         System.out.println("|___________________________________________|");
                         System.out.println("|                                           |");
                         System.out.println("| Atenção! Insira somente valor *Numérico* >|"+erro) ;
                         System.out.println("|      Execute o código Novamente          >|"+erro) ;
                         System.out.println("|___________________________________________|");
+                        n=(leia.nextInt());
                         break;
                      } 
 
-
                     for (int i = 0; i < n; i++) {
                     
+
+                        
                         //armazena Jogo
                         System.out.println("|  Jogo :|" + (i + 1));
                         System.out.println("| Informe o Placar:|");
