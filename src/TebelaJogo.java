@@ -9,9 +9,9 @@ import javax.xml.transform.ErrorListener;
  */
 public class TebelaJogo {
 
-    private static int placarTest;
-    private int minTemporadaTest;
-    private int maxTemporadaTest;
+    //private static int placarTest;
+    private static int minTemporadaTest;
+    private static int maxTemporadaTest;
     private int recordeminTest;
     private int recordemaxTest;
 
@@ -39,7 +39,9 @@ public class TebelaJogo {
         ArrayList<Jogos> ListaJogo2 = new ArrayList<>();   
         Jogos jogo2 = new Jogos();
 
-       
+        int minTemporada = 0;
+        int maxTemporada = 0;
+        int  placarTest = 0;
 
         System.out.println();
         System.out.println();
@@ -126,8 +128,7 @@ public class TebelaJogo {
 
                         // Recebendo = Placar Mínimo e Máximo da temporada
 
-                        int minTemporada = placar;
-                        int maxTemporada = placar;
+                       
                         int recordmin = 0;
                         int recordmax = 0;
 
@@ -140,21 +141,40 @@ public class TebelaJogo {
                             System.out.println("| Seu placar não  'Positvo' !|");
                             System.out.println("| Informe Placar >Novamente< |");
                             placar = (leia.nextInt());
-                            minTemporada = placar;
+                           // minTemporada = placar;
                         }
 
-                        //testador = maxTemporada;
+                        System.out.println("| PLACAR TEST  : "+placarTest+" |");
+
+                            //NOVOplacar     placar1
+                        if (placar < placarTest  ){
+
+                              minTemporada = placar;
+                              maxTemporada = placarTest;
+
+                        } else {
+
+                        minTemporada = placar;
+                        maxTemporada = placar;
+
+                        }
+
+                        if (placar > placarTest ) {
+
+                            maxTemporada = placar;
+                            minTemporada = placarTest;
+
+                        }
+
                         /**
-                         * @if
+                         * @if1
                          *  Verificações de placare recordes.
                          *  Verificação para anotar o recorde.
                          */
 
                         for (int a = 0; i < ListaJogo.size(); i++) {
 
-                            System.out.println("| Placar   1   : "+ListaJogo.get(i).getPlacar()+" |");
-                            System.out.println("| Placar   2  : "+placarTest+" |");
-
+                        //placar 1    //placar 2
                         if ((placar < placarTest)) {
                             recordmin = 1;
                             recordmax = 0;
@@ -164,17 +184,10 @@ public class TebelaJogo {
                             recordmin = 0;
                         }
                         
+                        
+
                     }
                     
-                        /*
-                        if ((ListaJogo.contains(n)||placar < 5)) {
-                            recordmin = 1;
-                            recordmax = 0;
-
-                        }else{
-                            recordmax = 1;
-                            recordmin = 0;
-                        }*/
                         
                         System.out.println("| Placar salvo com sucesso!  |");
                         System.out.println();
@@ -183,7 +196,7 @@ public class TebelaJogo {
                          * @ListaJogo.add
                          * ArrayList para criar uma nova referência de Objeto
                          */
-                        ListaJogo.add(new Jogos(placar,minTemporada,maxTemporada,recordmin,recordmax));
+                        ListaJogo.add(new Jogos(placar,placarTest,minTemporada,maxTemporada,recordmin,recordmax));
                     }
                     break;
 
@@ -217,13 +230,15 @@ public class TebelaJogo {
                         System.out.println();
 
                         placarTest = ListaJogo.get(i).getPlacar();
+                        minTemporadaTest = ListaJogo.get(i).getMinTemporada();
+                        maxTemporadaTest = ListaJogo.get(i).getMaxTemporada();
 
                     }
                     break;
                 }
 
                 /**
-                 * Saindo do programa...
+                 * Encerrando programa...
                  */
                 case 0: {
                         System.out.println();

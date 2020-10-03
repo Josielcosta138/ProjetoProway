@@ -1,22 +1,18 @@
 public class Jogos  {
 
 
+
     private int placar;
+    private int placarTest; 
     private int minTemporada;
     private int maxTemporada;
     private int recordemin;
     private int recordemax;
 
-    /**
-     * Váriaveis para que guarda dados do jogo
-     * @param placar
-     * @param minTemporada
-     * @param maxTemporada
-     * @param recordemin
-     * @param recordemax
-     */
-    public Jogos(int placar, int minTemporada, int maxTemporada, int recordemin, int recordemax){
+
+    public Jogos(int placar, int placarTest, int minTemporada, int maxTemporada, int recordemin, int recordemax){
         this.placar=placar;
+        this.placarTest=placarTest;
         this.minTemporada=minTemporada;
         this.maxTemporada=maxTemporada;
         this.recordemin=recordemin;
@@ -76,6 +72,16 @@ public class Jogos  {
     public void setPlacar(int placar) {
         this.placar = placar;
     }
+
+
+    public int getPlacarTest() {
+        return this.placarTest;
+    }
+
+    public void setPlacarTest(int placarTest) {
+        this.placarTest = placarTest;
+    }
+
 
     public void add(int nextInt) {
     }
