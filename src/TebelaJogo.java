@@ -135,7 +135,8 @@ public class TebelaJogo {
                          */
 
                         while (placar <= 0 == placar < 1000) {
-                            System.out.println("| Seu placar não  'Positvo' !|");
+                            System.out.println("| Placar não 'Positvo'      !|");
+                            System.out.println("| Ou maior que 1000'        !|");
                             System.out.println("| Informe Placar >Novamente< |");
                             placar = (leia.nextInt());
                            // minTemporada = placar;
