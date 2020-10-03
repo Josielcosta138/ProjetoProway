@@ -52,6 +52,7 @@ $ Abra a classe TabelaJogo.java e Execute o programa
 
 # Para executar, use uma IDE de seu gosto
 $ De preferencia Visual Studio Code
+$ O programa será executao no próprio console da IDE
 
 # Iniciar Projeto
 $  start
