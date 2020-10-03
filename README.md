@@ -25,6 +25,9 @@ A cada jogo ela ira anotar o **Placar**, **Mínimo da Temporada** e **Máximo da
 
 Também será anotado  quantas vezes foi quebrado o **Recorde Mínimo** e o **Recorde Máximo**.
 
+<h1 align="center">
+<img src="https://ik.imagekit.io/josiccc/Captura_de_Tela__106__TCD0LzmAz.png"> </h1>
+
 #
 ---
 ## 🛠 Tecnologias utilizadas
