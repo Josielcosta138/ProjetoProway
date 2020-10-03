@@ -6,6 +6,7 @@
 - [Sobre](#-sobre)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Como Baixar o projeto](#-como-baixar-o-projeto)
+- [Acesse]()
 - [Desenvolvido por . . .](#-desenvolvido-por-josiel-costa-martins.)
 
  #
@@ -59,21 +60,24 @@ $  start
 
 <!--Se tiver aplicação em algum local (remoto) -->
 <h3 align="center">
-    <a hreF="">Acessar a demonstração</a>
+    <a hreF="">Acesse a demonstração</a>
 
-#### Execuntando Tabela
-
-
+#### 📌 Execuntando Tabela
+<h1 align="c">
+<img src="https://ik.imagekit.io/josiccc/exec1_qYfdxFBGrs.png">
+<img src="https://ik.imagekit.io/josiccc/EXEC2_Q_HZwKkqh.png">
 
 ---
-#### Mostrando Tabela
-<h1 align="center">
+#### 📌 Mostrando Tabela
+<h1 align="">
 <img src="https://ik.imagekit.io/josiccc/jogo1e2_N34AKIvDQl.png">
 <img src="https://ik.imagekit.io/josiccc/jogo3e4_BOuSjKsH-.png"> 
+<img src="https://ik.imagekit.io/josiccc/jogo5e6_u5JCgwBwGp9.png"> 
 
-#### Possíveis erros
+---
+#### 📌 Possíveis erros
 
-<h1 align="center">
+<h1 align="">
 <img src="https://ik.imagekit.io/josiccc/erro1String_tvFge_eRQ_.png">
 <img src="https://ik.imagekit.io/josiccc/erro2maiorq1000_0iRj-xExb.png">
 <img src="https://ik.imagekit.io/josiccc/erro3NEg_tH3IjQmbG.png">

@@ -9,13 +9,6 @@ import java.util.Scanner;
  */
 public class TebelaJogo {
 
-    //private static int placarTest;
-   // private static int minTemporadaTest;
-   // private static int maxTemporadaTest;
-   // private int recordeminTest;
-   // private int recordemaxTest;
-
-
 
     /**
      * Parametros que define a classe onde irá Executar o Programa.
@@ -136,7 +129,8 @@ public class TebelaJogo {
                         int recordmax = 0;
  
                         /**
-                         * @while Verificações de placar e recordes. Verificação de numeros positivos e
+                         * @while Verificações de placar e recordes. 
+                         * Verificação de numeros positivos e
                          *        menores que 1000.
                          */
 
@@ -147,7 +141,10 @@ public class TebelaJogo {
                            // minTemporada = placar;
                         }
 
-                            //NOVOplacar     placar1
+                            /**
+                             * @if
+                             * verficação de Mínimo e Máximo da temporada
+                             */
                         if (placar < placarTest  ){
 
                               minTemporada = placar;
