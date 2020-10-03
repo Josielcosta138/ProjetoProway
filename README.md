@@ -63,14 +63,13 @@ $  start
 
 #### Execuntando Tabela
 
-<h1 align="center">
-<img src="https://ik.imagekit.io/josiccc/videoTabela_NqN7O-NKA.mp4 ">
+
 
 ---
 #### Mostrando Tabela
 <h1 align="center">
-<img src="https://ik.imagekit.io/josiccc/jogo1e2_N34AKIvDQl.png ">
-<img src="https://ik.imagekit.io/josiccc/jogo3e4_BOuSjKsH-.png "> 
+<img src="https://ik.imagekit.io/josiccc/jogo1e2_N34AKIvDQl.png">
+<img src="https://ik.imagekit.io/josiccc/jogo3e4_BOuSjKsH-.png"> 
 
 #### Possíveis erros
 
