@@ -45,19 +45,40 @@ Também será anotado  quantas vezes foi quebrado o **Recorde Mínimo** e o **Re
 $ git clone https://github.com/Josielcosta138/ProjetoProway
 
 # Entrar no diretório
-$ cd ProjetoProway
+$ cd: Proway
+$ src 
+$ Abra a classe TabelaJogo.java e Execute o programa
 
-# Instalar as dependências
-$ yarn install
+# Para executar, use uma IDE de seu gosto
+$ De preferencia Visual Studio Code
 
 # Iniciar Projeto
-$ yarn start
+$  start
 ```
 ---
 
 <!--Se tiver aplicação em algum local (remoto) -->
 <h3 align="center">
-    <a hreF="https://httpppss.com/">Acessar a demonstração</a>
+    <a hreF="">Acessar a demonstração</a>
+
+#### Execuntando Tabela
+
+<h1 align="center">
+<img src="https://ik.imagekit.io/josiccc/videoTabela_NqN7O-NKA.mp4 ">
+
+---
+#### Mostrando Tabela
+<h1 align="center">
+<img src="https://ik.imagekit.io/josiccc/jogo1e2_N34AKIvDQl.png ">
+<img src="https://ik.imagekit.io/josiccc/jogo3e4_BOuSjKsH-.png "> </h1>
+---
+#### Possíveis erros
+
+<h1 align="center">
+<img src="https://ik.imagekit.io/josiccc/erro1String_tvFge_eRQ_.png">
+<img src="https://ik.imagekit.io/josiccc/erro2maiorq1000_0iRj-xExb.png">
+<img src="https://ik.imagekit.io/josiccc/erro3NEg_tH3IjQmbG.png">
+
 <h3 >
 
 ---
